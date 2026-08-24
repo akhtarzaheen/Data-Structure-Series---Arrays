@@ -4,23 +4,19 @@ var removeElement = function(nums, val) {
     let j=n-1;
     let k=0;
     while(i>=0 &&j>=0){
-        console.log('before','i=>',i,'j=>',j,'nums=>',nums)
          if(nums[j] === val){
             let t = nums[i];
             nums[i]= nums[j];
             nums[j]= t;
             i--;
             j--;
-            // k++;
         }else
         if(nums[i] === val){
             i--;
-            // k++;
         }else{
             j--;
             k++;
         }
-        console.log('after=>','i=>',i,'j=>',j,'nums=>',nums)
     }
     return {k,nums};
 };
