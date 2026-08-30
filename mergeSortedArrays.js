@@ -3,7 +3,6 @@ var merge = function(nums1, m, nums2, n) {
     let k=0;
     let i=0;
     let j=0;
-    let largeLength = m>n ? m : n
     while(k<n+m){
         if(nums1[i]<=nums2[j]){
             result.push(nums1[i])
@@ -14,7 +13,6 @@ var merge = function(nums1, m, nums2, n) {
         }
         k++;
     }
-    console.log('i,j=>',i,j)
     if(i<m){
         while(i<m){
                 result.push(nums1[i])
