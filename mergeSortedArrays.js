@@ -35,7 +35,6 @@ var merge1 = function(nums1, m, nums2, n) {
 
 var merge2 = function(nums1, m, nums2, n) {
     let nums1Copy = nums1.slice(0,m);
-    console.log('nums1Copy=>',nums1Copy)
     let k=0;
     let i=0;
     let j=0;
